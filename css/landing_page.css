@@ -214,15 +214,23 @@
     width: 3vh;
 }
 
-.block-4-4-cloth-link button {
+.block-4-4-cloth-link a {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-4-4-cloth-link a button {
     background: none;
     color: var(--background-color);
     border: solid 0.1vh var(--white);
-    width: 20%;
+    width: 100%;
     height: 30%;
 }
 
-.block-4-4-cloth-link button:hover {
+.block-4-4-cloth-link a button:hover {
     background: var(--white);
 }
 
