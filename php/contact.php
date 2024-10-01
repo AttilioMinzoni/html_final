@@ -1,54 +1,42 @@
+<?php require "config.ini"; ?>
+
 <?php
-    $errors = [];
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get POST data
-        $name = isset($_POST['fullname']) ? strip_tags(trim($_POST['fullname'])) : ''; // Fixed the input name
-        $email = isset($_POST['email']) ? trim($_POST['email']) : '';
-        $message = isset($_POST['message']) ? strip_tags(trim($_POST['message'])) : '';
+ini_set ("SMTP","sh-pro26.hostgator.com.br");
 
-        // Validate form fields
-        if (empty($name)) {
-            $errors[] = 'Name is empty';
-        }
+$nome=$_POST["name"];
 
-        if (empty($email)) {
-            $errors[] = 'Email is empty';
-        } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $errors[] = 'Email is invalid';
-        }
+$email=$_POST["email"];
 
-        if (empty($message)) {
-            $errors[] = 'Message is empty';
-        }
+$telefone=$_POST["subject"];
 
-        // If no errors, send email
-        if (empty($errors)) {
-            // Recipient email address (replace with your own)
-            $recipient = "hiluaa7@gmail.com";
+$assunto="Solicitar Orçamento";
 
-            // Additional headers
-            $headers = "From: $name <$email>\r\n";
-            $headers .= "Reply-To: $email\r\n"; // To allow replies
+$mensagem=$_POST["message"];
 
-            // Send email
-            if (mail($recipient, "Contact Form Submission", $message, $headers)) {
-                echo "<p>Email sent successfully!</p>";
-            } else {
-                echo "<p>Failed to send email. Please try again later.</p>";
-            }
-        } else {
-            // Display errors
-            echo "<div class='error-messages'>The form contains the following errors:<br>";
-            foreach ($errors as $error) {
-                echo "- $error<br>";
-            }
-            echo "</div>";
-        }
-    } else {
-        // Not a POST request, display a 403 forbidden error
-        header("HTTP/1.1 403 Forbidden");
-        echo "<p>You are not allowed to access this page.</p>";
-        exit();
-    }
-    ?>
+
+if ($certo== "1")
+
+{
+
+
+mail ("$emaildest","$assunto","Nome:$nome\n\n Email: $email\n\n Telefone:$telefone\n\n Mensagem:\n$mensagem\n\n ...::: Recebido do site SMARTSAMU.COM.BR :::...","From:$nome<$email>");
+
+}
+
+// HTML do redirecionameto e se não redirecionar aparece um link
+
+echo "<html><head>";
+
+echo "<meta http-equiv=\"refresh\" content=\"0;url=$redirecionar\">";
+
+echo "<title>Redirecionado ...</title>";
+
+echo "</head><body bgcolor=\"#ffffff\">";
+
+echo "<a href=\"$redirecionar\" target=\"_top\">Voltar Para O Site</a>";
+
+echo "</body></html>";
+
+
+?>
