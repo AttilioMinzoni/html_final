@@ -1,0 +1,18 @@
+:root {
+    --background-color-transparent: #181c14b1;
+    --background-color: #181C14;
+    --white: #FFF;
+    --underwater-gray: #3C3D37;
+    --alternative-gray: #979797;
+    --royal-green: #718e84;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+:any-link {
+    text-decoration: none;
+}

@@ -1,0 +1,33 @@
+.block-1 {
+    height: 15vh;
+}
+
+.shop-row {
+    margin-top: 10vh;
+}
+
+.shop-card {
+    border-radius: 1vh;
+    background-size: cover;
+    background-position: center;
+    
+    transition: transform 0.2s;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.shop-card:hover {
+    transform: scale(1.1);
+}
+
+.shop-card p {
+    color: var(--white);
+    font-size: 16pt;
+    margin-bottom: 2vh;
+    background-color: var(--background-color-transparent);
+    border-radius: 1vh;
+}

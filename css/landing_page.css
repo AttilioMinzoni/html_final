@@ -1,0 +1,256 @@
+@import url(root.css);
+/* First block */
+.block-1 {
+    background-image: url(../images/backgrounds/mist-black-background.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-1-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 40vh;
+}
+
+.block-1-image {
+    border-radius: 100%;
+    border: solid 0.5vh var(--royal-green);
+}
+
+.block-1-text {
+    color: var(--white);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.block-1-text-title {
+    color: var(--white);
+    font-size: 26pt;
+}
+
+.block-2-1 {
+    
+    background-image: url(../images/backgrounds/ocean-background.webp);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.block-2-2 {
+    background-image: url(../images/Jewelry/Necklaces/gold-sharp-collar.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-2-2-filler {
+    height: 30vh;
+}
+
+.block-2-text {
+    color: var(--white);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 2vw;
+    border-radius: 2vh;
+    background: var(--background-color-transparent);
+}
+
+.block-2-text-title {
+    color: var(--white);
+    font-size: 26pt;
+}
+
+.block-2-1-button {
+    align-self: center;
+}
+
+.block-3-1 {
+    background: url(../images/backgrounds/drop-background.webp);
+    background-size: cover;
+    background-blend-mode: hard-light;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.block-3-1-text {
+    color: var(--white);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1vh;
+}
+
+.block-3-1-text-title {
+    color: var(--white);
+    font-size: 26pt;
+}
+
+.block-3-2 {
+    background: url(../images/Jewelry/crowns/dragon-crown.webp);
+    background-size: cover;
+    background-position-y: 70%;
+
+    
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 1vh;
+}
+
+.block-3-2-text {
+    color: var(--white);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1vh;
+    padding: 2vh;
+    background-color: var(--background-color-transparent);
+    border-radius: 1vh;
+    margin-right: 5vh;
+}
+
+.block-3-2-text-title {
+    color: var(--white);
+    font-size: 26pt;
+}
+
+.collection-text-body {
+    background-color: var(--background-color-transparent);
+    border-radius: 1vh;
+}
+
+.collection {
+    color: var(--white);
+    fill: var(--white);
+}
+
+.collection-block {
+    color: var(--white); 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.collection-block-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.collection-block-text-title {
+    margin-top: 5vh;
+    color: var(--white);
+    font-size: 26pt;
+}
+
+
+.collection-block hr {
+    width: 50%;
+}
+
+.collection-block-aries {
+    background: url(../images/Clothing/Zodiac-collection/aries-zodiac-suit.webp);
+    filter: saturate(50%);
+    background-size: cover;   
+}
+
+.collection-block-libra {
+    background: url(../images/Clothing/Zodiac-collection/libra-zodiac-dress.webp);
+    filter: saturate(50%);
+    background-size: cover;   
+}
+
+.collection-block-sagittarius {
+    background: url(../images/Clothing/Zodiac-collection/sagittarius-zodiac-suit.webp);
+    filter: saturate(50%);
+    background-size: cover;   
+}
+
+.block-4-4-cloth-link {
+    width: 95vw;
+    height: 20vh;
+    background: var(--royal-green);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+}
+
+.block-4-4-cloth-link svg {
+    width: 3vh;
+}
+
+.block-4-4-cloth-link button {
+    background: none;
+    color: var(--background-color);
+    border: solid 0.1vh var(--white);
+    width: 20%;
+    height: 30%;
+}
+
+.block-4-4-cloth-link button:hover {
+    background: var(--white);
+}
+
+.cloth-link-text {
+    color: var(--white);
+    font-size: 26pt;
+    width: 40%;
+}
+
+.zodiac-collection svg {
+    width: 3vh;
+}
+
+.block-5-1 {
+    background: url(../images/Clothing/cherry-blossom-suit.webp);
+    background-size: cover;
+    background-position-x: 50%;
+}
+
+.block-5-2 {
+    background: url(../images/backgrounds/blossom-background.webp);
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding-bottom: 5vh;
+}

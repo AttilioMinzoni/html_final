@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royalty</title>
+
+    <!-- Links css -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/default_block.css">
+    <link rel="stylesheet" href="../css/content_blocks.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/about_us.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
+     <!-- Favicon -->
+     <link rel="icon" type="image/x-icon" href="../images/logo.webp">
+</head>
+<body class="playfair-font-200">
+    <img src="../images/backgrounds/background.webp" alt="" class="fixed-background-image">
+
+    <header>
+        <div>
+            <img src="../images/logo.webp" alt="">
+            <p class="playfair-font-200">Contato</p>
+        </div>
+    </header>
+
+    <main class="contents">
+        <section>
+        <div class="block-of-content block-of-content-full-width block-1"> 
+            <nav>
+                <ul class="navigation-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">Sobre nós</a></li>
+                    <li><a href="shop.html">Loja</a></li>
+                    <li>
+                        <div class="my-acconut-label-group">
+                            <p onclick="myFunction()" class="dropbtn">Minha conta</p>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129"><g><path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/></g></svg>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Orders</a>
+                            <a href="#">Account Details</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contate-nos</a></li>
+                </ul>
+            </nav>
+
+            <div class="block-1-content-container">
+                <div class="block-1-text">
+                    <p class="block-1-text-title about-us-text">Preencha o formulário para enviar um email direto para nós!</p>
+                    <hr>
+                    <form action="../php/contact.php" method="POST" class="contact-form">
+                        <input type="text" placeholder="email" id="email" name="email" required>
+                        <input type="text" placeholder="Nome completo" id="fullname" name="fullname" required>
+                        <textarea id="message" cols="30" rows="10" placeholder="Mensagem" name="message" required></textarea>
+                        <button type="submit" value="Send">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+</body>
+<footer>
+    <div class="footer-social">
+        <div class="footer-logo">
+            <img src="../images/logo.webp" alt="">
+            <p class="playfair-font-200">ROYALTY</p>
+        </div>
+        <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e8eaed"><path d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z"/></svg>    
+        </a>
+    </div>
+    <div class="footer-details">
+        <ul>
+            <li>Contato</li>
+            <li>Telefone > 12996113191</li>
+            <li>Imagens retiradas de > <a href="https://www.unsplash.com" target="_blank">Unsplash</a></li>
+            <li>Icones retirados de > <a href="https://www.flaticon.com" target="_blank">Flaticon</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="../js/dropdown.js"></script>
+
+</html>

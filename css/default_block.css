@@ -1,0 +1,33 @@
+@import url(root.css);
+
+.block-1 {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-1-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 40vh;
+}
+
+.block-1-image {
+    border-radius: 100%;
+    border: solid 0.5vh var(--royal-green);
+}
+
+.block-1-text {
+    color: var(--white);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.block-1-text-title {
+    color: var(--white);
+    font-size: 26pt;
+}

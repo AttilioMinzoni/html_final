@@ -1,0 +1,16 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    width: 80vw;
+    gap: 2vh;
+
+}
+
+.contact-form input {
+    width: 30%;
+}
+
+.contact-form button {
+    width: 20%;
+}

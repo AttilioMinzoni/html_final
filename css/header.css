@@ -1,0 +1,101 @@
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    font-size: 28pt;
+    margin: 3vh 0 0 0;
+} img {
+    width: 15%;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.fixed-background-image {
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    margin-top: -10vh;
+    filter: blur(1vw);
+}
+
+/* Navigation */
+nav {
+    padding-bottom: 3vh;
+}
+
+.navigation-list {
+    margin: 5vh 0 0 5vh;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+    font-size: 16pt;
+}
+
+.navigation-list > li > a {
+    color: var(--white);
+}
+
+.navigation-list > li > a:hover {
+    transition: 0.2s;
+    color: var(--royal-green);
+}
+
+    /* Account dropdown */
+    .dropbtn {
+        cursor: pointer;
+        color: var(--white);
+    }
+
+    .my-acconut-label-group {
+        display: flex;
+        flex-direction: row;
+        gap: 1vh;
+    }
+
+    .my-acconut-label-group svg {
+        fill: var(--white);
+        width: 3vh;
+    }
+
+    .my-acconut-label-group:hover *, .my-acconut-label-group:focus * {
+        transition: color 0.2s, fill 0.2s;
+        color: var(--royal-green);
+        fill: var(--royal-green);
+    }
+
+    .dropdown-content > a {
+        transition: color 0.2s;
+    }
+
+    .dropdown-content a:hover, .dropdown-content a:focus {
+        color: var(--royal-green);
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    }
+
+    .dropdown-content a {
+        color: var(--alternative-gray);
+        padding: 1vh;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        color: var(--royal-green);
+    }
+
+    .show {
+        display:block;
+    }

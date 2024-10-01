@@ -1,0 +1,16 @@
+.block-1 {
+    background-image: url(../images/backgrounds/mist-black-background.webp);
+}
+
+.block-1-content-container {
+    width: 100vw;
+    justify-content: start;
+    align-items: start;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+.about-us-text {
+    font-size: 20pt;
+    width: 80vw;
+}
