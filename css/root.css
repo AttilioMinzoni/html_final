@@ -16,3 +16,8 @@
 :any-link {
     text-decoration: none;
 }
+
+a:any-link {
+    color: var(--white);
+    text-decoration: underline;
+}
