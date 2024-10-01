@@ -4,11 +4,32 @@
 
     width: 80vw;
     gap: 2vh;
-
+    background-color: var(--background-color-transparent);
+    padding: 5vh;
 }
 
 .contact-form input {
     width: 30%;
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    border-bottom: solid 0.1vh var(--white);
+}
+
+.contact-form input:focus {
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: none;
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    border-bottom: solid 0.1vh var(--white);
+}
+
+.contact-form textarea:focus {
+    outline: none;
 }
 
 .contact-form button {
